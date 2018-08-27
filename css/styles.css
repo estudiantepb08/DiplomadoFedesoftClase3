@@ -24,9 +24,9 @@ html{
     margin: 0px;
     margin-top: 10px;    
     width: 100%;
-    height: 30px;
-   
+    height: 30px;   
 }
+
 nav{
     font-weight: bold;    
     color: gray;
@@ -44,6 +44,9 @@ nav{
     height: 30px;
     width: 30px;    
 }
+#cabecera nav ul{
+    overflow: hidden;
+}
 nav ul li{
     float: left;
     margin-left: 20px;
@@ -57,7 +60,7 @@ ul li a{
 }
 
 .logo{
-    float: left;
+    float: right;
     width: 29%; 
     text-align: center; 
     margin-left: 4px; 
@@ -65,19 +68,173 @@ ul li a{
 .logo img{
     height: 45px;
     width: 195px;
+    position: absolute; z-index:10;
+        top: 0; left: 550px;
 }
 
-@media screen and (min-width: 600px){
-.menuDerecho{
-    width: 20%;
-}
-.logo{
-    widows: 25%;
-}
-.menuIzquierdo{
-    width: 15%;
-}
-}
+
+@media screen and (max-width: 800px){
+   #cabecera nav{
+       width: 100%;
+       height: 100%;
+       margin: 0%;     
+       color: gray;
+    }
+
+    #cabecera .logo{        
+        width: 50%;  
+        text-align: center;
+        float: left;  
+          
+     }
+     #cabecera .logo .imagenlogo{
+        display: block;
+        float: left;
+       /* clear: unset;*/   
+        position: absolute; z-index:10;
+        top: 15px; left: 40px;
+        height: 30px;
+        
+         }
+
+     #cabecera nav .menuDerecho{        
+        width: 100%;       
+        float: left;
+        /*clear: both;*/
+        position: absolute;
+        top: 80px;      
+        bottom: 50;
+        
+      }
+
+      #cabecera nav .menuDerecho .menuresposi1 .botones{
+         display: block;
+          float: left;
+          position: absolute; z-index:10;
+          position: fixed;
+          top: 20px; left: 10px;
+          width: 100%;
+          height: 30px;
+      }
+
+      #cabecera nav .menuDerecho .menuresposi1 .item1{
+        display: block;
+        float: left; 
+        position: absolute;
+        position: fixed;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        top: 80px; left: 0;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        
+    }
+    #cabecera nav .menuDerecho .menuresposi1 .lineaD{
+        display: block;
+        float: left; 
+        position: absolute;
+        position: fixed;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        top: 80px; left: 0;
+        width: 100%;
+        height: 30px;
+        text-align: center;        
+    }    
+  
+     #cabecera nav .menuIzquierdo{               
+        width: 100%; 
+        position: absolute; 
+        left: 50;
+        right: 50;  
+        top: 150px;      
+        bottom: 50;        
+     }
+
+     #cabecera nav .menuIzquierdo .menuresposi2 .configure{
+        display: block;
+        float: left; 
+        position: absolute; z-index:10;
+        position: fixed;
+        top: 50px; left: 0;
+        width: 100%;
+        height: 30px;
+        text-align: center;       
+    }
+    
+     #cabecera nav .menuIzquierdo .menuresposi2 .carrito{
+        display: block;
+        float: left; 
+        position: absolute; z-index:10;
+        position: fixed;
+        top: 15px; left: 250px;        
+        height: 30px;   
+    }
+
+    cabecera nav .menuIzquierdo .menuresposi2 .item1{
+        display: block;
+        float: left; 
+        position: absolute;
+        position: fixed;
+        top: 50px; left: 0;
+        width: 100%;
+        height: 30px;
+        text-align: center; 
+    }
+
+    nav ul li{        
+        margin-left: 20px;
+    }
+    ul li{
+        text-decoration: none;
+        list-style: none;
+    }
+    ul li a{
+        text-decoration: none;
+    }
+
+      
+       
+
+    
+    
+    /*.menuDerecho{
+        float: right;
+        width: 20%;
+    }
+    
+    .menuIzquierdo{
+        float: left;
+        width: 15%;
+    }
+    
+    .menuIzquierdo a img{
+        height: 30px;
+        width: 30px;    
+    }
+    #cabecera nav ul{
+        overflow: hidden;
+    }
+    nav ul li{
+        float: left;
+        margin-left: 20px;
+    }
+    ul li{
+        text-decoration: none;
+        list-style: none;
+    }
+    ul li a{
+        text-decoration: none;
+    }
+    
+    
+    .logo img{
+        height: 45px;
+        width: 195px;
+    }*/
+       
+}/*
 @media (min-width: 900px){
     .menuDerecho{
         width: 10%;
@@ -93,7 +250,7 @@ ul li a{
         width: 15%;
     }
     }
-    
+    */
        
 /*#cuerpo{
     width: 100%;
