@@ -1,30 +1,32 @@
 
 function fnejecutar(operacion){
     var resultado;
+    var operaciones = document.getElementById('operacion').value;   
+    
 
-switch(operacion){
+switch(operaciones){
     case "sumar":
     function fsuma(numero1, numero2){       
-        resultSuma = parseInt(numero1) + parseInt(numero2);
-        return resultado;
+        resultSuma = parseInt(document.getElementById('num1').value) + parseInt(document.getElementById('num2').value);
+        return document.getElementById('resultado').value = resultado;
     }break;
 
     case "restar":
     function frestar(numero1, numero2){        
-        resultResta = parseInt(numero1) - parseInt(numero2);
-        return resultado
+        resultResta = parseInt(document.getElementById('num1').value) - parseInt(document.getElementById('num2').value);
+        return document.getElementById('resultado').value = resultado;
     }break;
 
     case "multiplicar":
     function fmultiplicar(numero1, numero2){       
-        resultado = parseInt(numero1) * parseInt(numero2);
-        return resultado
+        resultado = parseInt(document.getElementById('num1').value) * parseInt(document.getElementById('num2').value);
+        return document.getElementById('resultado').value = resultado;
     }break;
 
     case "dividir":
     function fdividir(numero1, numero2){       
-        resultado = parseInt(numero1) / parseInt(numero2);
-        return resultado
+        resultado = parseInt(document.getElementById('num1').value) / parseInt(document.getElementById('num2').value);
+        return document.getElementById('resultado').value = resultado;
     }break;
     
 }
